@@ -22,7 +22,7 @@ class simple_R2_plot :
         self.ymax = max (np.amax(self.pred), np.amax(self.obs))
         self.yrange = self.ymax - self.ymin
         self.fig = None
-        self.RMSE = calc_RMSE()
+        self.RMSE = self.calc_RMSE()
         self.R2 = self.calc_R2()
         self.label_message = None
         self.xlabel = self.df_obs.name
